@@ -1,6 +1,6 @@
 // holds all my app routes
 import React from 'react';
-
+import { Provider } from 'react-redux';
 import {
   BrowserRouter,
   Routes,
@@ -9,17 +9,21 @@ import {
 
 import FrontPage from './front_page/front_page';
 import Login from './session/login';
+import LoginContainer from './session/login_container';
 import Signup from './session/signup';
 
 const App = () => (
   <div className="app-routes-wrapper">
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<FrontPage />} />
-        <Route path="login" element={<Login />} />
-        <Route path="signup" element={<Signup />} />
-      </Routes>
-    </BrowserRouter>
+    <Provider store={ store }>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<FrontPage />}>
+            <Route path="login" element={<LoginContainer />} />
+            <Route path="signup" element={<Signup />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </Provider>
   </div>
 );
 
