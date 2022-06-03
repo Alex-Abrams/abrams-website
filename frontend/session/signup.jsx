@@ -6,6 +6,9 @@ class Signup extends React.Component {
     super(props);
   }
 
+  componentDidMount() {
+    console.log('hello');
+  }
 
   render() {
     return(
