@@ -4,6 +4,8 @@ import { Route, Link, NavLink, Outlet } from 'react-router-dom';
 import Login from '../session/login';
 import Signup from '../session/signup';
 
+const logo = window.computerURL;
+
 class FrontPage extends React.Component {
   constructor(props) {
     super(props);
@@ -30,16 +32,25 @@ class FrontPage extends React.Component {
   }
 
 
+  // <div style={{ backgroundImage: `url(require("../images/computer_background.png"))`}}>
   render() {
     return(
-      <section className="frontpage">
-        <h1>HELLO WORLD!??!?!?!?</h1>
+      <section className="frontPage">
+        <nav className="frontpage-nav">
+          <h2 className="texty">Alexander Abrams</h2>
+          <h3 className="d">Software Developer</h3>
+        </nav>
+
+        <img className="discord-server-icon"
+            src={logo}
+            style={{height: 55, width: 55}}>
+          </img>
 
 
         <Link to="/login">login</Link>
         <Link to="/signup">signup</Link>
 
-        <form className="sessionForm">
+        <form className="login-form">
           <input
             type="text"
             placeholder="username"
