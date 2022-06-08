@@ -1,10 +1,11 @@
-import React, { Component } from 'react';
+import React, { Component, useState, useEffect } from 'react';
 
 import { Route, Link, NavLink, Outlet } from 'react-router-dom';
 import Login from '../session/login';
 import Signup from '../session/signup';
 
-const logo = window.computerURL;
+import useWindowDimensions from '../helper_functions/window_dimensions';
+import computer_background from '../images/computer_background.png';
 
 class FrontPage extends React.Component {
   constructor(props) {
@@ -32,17 +33,25 @@ class FrontPage extends React.Component {
   }
 
 
-  // <div style={{ backgroundImage: `url(require("../images/computer_background.png"))`}}>
   render() {
+
+    const height = window.innerHeight;
+    const width = window.innerWidth;
+
+    const page_style = {
+      backgroundImage: `url(${computer_background})`,
+      height: height,
+      width: width,
+    };
     return(
-      <section className="frontPage">
+      <section className="frontPage" style={page_style}>
         <nav className="frontpage-nav">
           <h2 className="texty">Alexander Abrams</h2>
           <h3 className="d">Software Developer</h3>
         </nav>
 
-        <img className="discord-server-icon"
-            src={logo}
+        <img className="computer_pic"
+            src={computer_background}
             style={{height: 55, width: 55}}>
           </img>
 

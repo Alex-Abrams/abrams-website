@@ -7,6 +7,8 @@ import {
   Route,
 } from "react-router-dom";
 
+import computer_background from './images/computer_background.png';
+
 import FrontPage from './front_page/front_page';
 import FrontPageContainer from './front_page/front_page_container';
 import Login from './session/login';
