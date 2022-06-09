@@ -5,6 +5,7 @@ import {
   BrowserRouter,
   Routes,
   Route,
+  Navigate
 } from "react-router-dom";
 
 import computer_background from './images/computer_background.png';
@@ -24,6 +25,11 @@ const App = () => (
             <Route path="login" element={<LoginContainer />} />
             <Route path="signup" element={<Signup />} />
           </Route>
+          <Route
+                path="*"
+                element={<Navigate to="/" replace />}
+            />
+          <Route path="api/signup" element={<Signup />} />
         </Routes>
       </BrowserRouter>
     </Provider>

@@ -4,7 +4,6 @@ import { Route, Link, NavLink, Outlet } from 'react-router-dom';
 import Login from '../session/login';
 import Signup from '../session/signup';
 
-import useWindowDimensions from '../helper_functions/window_dimensions';
 import computer_background from '../images/computer_background.png';
 
 class FrontPage extends React.Component {
@@ -42,6 +41,9 @@ class FrontPage extends React.Component {
       backgroundImage: `url(${computer_background})`,
       height: height,
       width: width,
+      backgroundPosition: 'center',
+      backgroundSize: 'cover',
+      backgroundRepeat: 'no-repeat',
     };
     return(
       <section className="frontPage" style={page_style}>
