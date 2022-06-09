@@ -17,6 +17,14 @@ class FrontPage extends React.Component {
     };
 
     this.handleSubmit = this.handleSubmit.bind(this);
+
+    if (window.performance) {
+      if (performance.navigation.type == 1) {
+        alert( "This page is reloaded" );
+      } else {
+        alert( "This page is not reloaded");
+      }
+    };
   }
 
   handleInput(type) {
