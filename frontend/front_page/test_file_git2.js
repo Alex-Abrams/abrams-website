@@ -27,32 +27,24 @@ class TestPageTwo extends React.Component {
     };
   }
 
-  handleInput(type) {
-    return (event) => {
-      this.setState({ [type]: event.target.value });
-    };
-  }
 
-  handleSubmit(event) {
-    event.preventDefault();
-    const user = Object.assign({}, this.state);
-    this.props.receiveCurrentUser(user);
-  }
 
 
   render() {
 
-    const height = window.innerHeight;
-    const width = window.innerWidth;
-
-    const page_style = {
-      backgroundImage: `url(${computer_background})`,
-      height: height,
-      width: width,
-      backgroundPosition: 'center',
-      backgroundSize: 'cover',
-      backgroundRepeat: 'no-repeat',
-    };
+    /////////////// testing add
+    /////////////// testing add
+    /////////////// testing add
+    /////////////// testing add
+    /////////////// testing add
+    /////////////// testing add
+    /////////////// testing add
+    /////////////// testing add
+    /////////////// testing add
+    /////////////// testing add
+    /////////////// testing add
+    /////////////// testing add
+    /////////////// testing add 
     return(
       <section className="frontPage" style={page_style}>
         <nav className="frontpage-nav">
