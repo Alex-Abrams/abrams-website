@@ -27,17 +27,7 @@ class TestPageTwo extends React.Component {
     };
   }
 
-  handleInput(type) {
-    return (event) => {
-      this.setState({ [type]: event.target.value });
-    };
-  }
 
-  handleSubmit(event) {
-    event.preventDefault();
-    const user = Object.assign({}, this.state);
-    this.props.receiveCurrentUser(user);
-  }
 
 
   render() {
