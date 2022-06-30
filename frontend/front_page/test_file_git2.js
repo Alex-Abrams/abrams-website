@@ -32,17 +32,19 @@ class TestPageTwo extends React.Component {
 
   render() {
 
-    const height = window.innerHeight;
-    const width = window.innerWidth;
-
-    const page_style = {
-      backgroundImage: `url(${computer_background})`,
-      height: height,
-      width: width,
-      backgroundPosition: 'center',
-      backgroundSize: 'cover',
-      backgroundRepeat: 'no-repeat',
-    };
+    /////////////// testing add
+    /////////////// testing add
+    /////////////// testing add
+    /////////////// testing add
+    /////////////// testing add
+    /////////////// testing add
+    /////////////// testing add
+    /////////////// testing add
+    /////////////// testing add
+    /////////////// testing add
+    /////////////// testing add
+    /////////////// testing add
+    /////////////// testing add 
     return(
       <section className="frontPage" style={page_style}>
         <nav className="frontpage-nav">
