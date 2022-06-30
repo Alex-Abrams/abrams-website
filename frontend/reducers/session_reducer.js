@@ -24,6 +24,4 @@ const sessionReducer = (state = {}, action) => {
 export default sessionReducer;
 
 
-/// TESTING GIT BRANCH COMMIT #2
-
-/// TESTING GIT BRANCH MASTer
+// GIT TESTBRANCH
