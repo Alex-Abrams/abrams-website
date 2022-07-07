@@ -41,14 +41,17 @@ class TestPageTwo extends React.Component {
         } else {
           alert( "This page is not reloaded");
         }
-        if (window.performance) {
-          if (performance.navigation.type == 1) {
-            alert( "This page is reloaded" );
-          } else {
-            alert( "This page is not reloaded");
-          }
   };
 
+///ADDED COLORBRANCH
+///ADDED COLORBRANCH
+///ADDED COLORBRANCH
+///ADDED COLORBRANCH
+///ADDED COLORBRANCH
+///ADDED COLORBRANCH
+///ADDED COLORBRANCH
+///ADDED COLORBRANCH
+///ADDED COLORBRANCH
 
 
   render() {
