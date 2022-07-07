@@ -28,23 +28,31 @@ class TestPageTwo extends React.Component {
   }
 
 
+  submitFile() {
+    if (window.performance) {
+      if (performance.navigation.type == 1) {
+        alert( "This page is reloaded" );
+      } else {
+        alert( "This page is not reloaded");
+      }
+      if (window.performance) {
+        if (performance.navigation.type == 1) {
+          alert( "This page is reloaded" );
+        } else {
+          alert( "This page is not reloaded");
+        }
+        if (window.performance) {
+          if (performance.navigation.type == 1) {
+            alert( "This page is reloaded" );
+          } else {
+            alert( "This page is not reloaded");
+          }
+  };
+
 
 
   render() {
 
-    /////////////// testing add
-    /////////////// testing add
-    /////////////// testing add
-    /////////////// testing add
-    /////////////// testing add
-    /////////////// testing add
-    /////////////// testing add
-    /////////////// testing add
-    /////////////// testing add
-    /////////////// testing add
-    /////////////// testing add
-    /////////////// testing add
-    /////////////// testing add 
     return(
       <section className="frontPage" style={page_style}>
         <nav className="frontpage-nav">
