@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   namespace :api, defaults: {format: :json} do
 
-    resources :signup, only: [:index]
+    resources :signup, only: [:index, :show]
 
     resource :user, only: [:create, :show]
 

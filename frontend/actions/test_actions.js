@@ -12,27 +12,6 @@ export const receiveCurrentUser = current_user => ({
   current_user
 });
 
-// export const logoutCurrentUser = () => ({
-//   type: LOGOUT_CURRENT_USER,
-// });
-
- // change branch changes include the two new actions at bottom and the commented code
- 
-// export const newAction = () => ({
-//   type: RECEIVE_NEW_INFO,
-// });
-//
-// export const receiveShoppingCart = cart => ({
-//   type: RECEIVE_SHOPPING_CART,
-// });
-//
-// export const newAction = () => ({
-//   type: RECEIVE_NEW_INFO,
-// });
-//
-// export const receiveShoppingCart = cart => ({
-//   type: RECEIVE_SHOPPING_CART,
-// });
 
 export const newAction = () => ({
   type: RECEIVE_NEW_INFO,

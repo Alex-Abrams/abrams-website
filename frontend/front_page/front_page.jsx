@@ -18,13 +18,13 @@ class FrontPage extends React.Component {
 
     this.handleSubmit = this.handleSubmit.bind(this);
 
-    if (window.performance) {
-      if (performance.navigation.type == 1) {
-        alert( "This page is reloaded" );
-      } else {
-        alert( "This page is not reloaded");
-      }
-    };
+    // if (window.performance) {
+    //   if (performance.navigation.type == 1) {
+    //     alert( "This page is reloaded" );
+    //   } else {
+    //     alert( "This page is not reloaded");
+    //   }
+    // };
   }
 
   handleInput(type) {
@@ -67,7 +67,7 @@ class FrontPage extends React.Component {
 
 
         <Link to="/login">login</Link>
-        <Link to="/signup">signup</Link>
+        <Link to="api/signup">signup</Link>
 
         <form className="login-form">
           <input

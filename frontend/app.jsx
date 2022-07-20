@@ -23,12 +23,13 @@ const App = () => (
         <Routes>
           <Route path="/" element={<FrontPageContainer />}>
             <Route path="login" element={<LoginContainer />} />
-            <Route path="signup" element={<Signup />} />
-          </Route>
+            {/* <Route path="signup" element={<Signup />} />
           <Route
-                path="*"
-                element={<Navigate to="/" replace />}
-            />
+          path="*"
+          element={<Navigate to="/" replace />}
+          />
+          */}
+          </Route>
           <Route path="api/signup" element={<Signup />} />
         </Routes>
       </BrowserRouter>
@@ -37,3 +38,5 @@ const App = () => (
 );
 
 export default App;
+
+// <Route path="signup" element={<Signup />} />

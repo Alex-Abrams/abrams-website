@@ -5,13 +5,13 @@ class Signup extends React.Component {
   constructor(props) {
     super(props);
 
-    if (window.performance) {
-      if (performance.navigation.type == 1) {
-        alert( "This page is reloaded" );
-      } else {
-        alert( "This page is not reloaded");
-      }
-    };
+  //   if (window.performance) {
+  //     if (performance.navigation.type == 1) {
+  //       alert( "This page is reloaded" );
+  //     } else {
+  //       alert( "This page is not reloaded");
+  //     }
+  //   };
   }
 
   componentDidMount() {
@@ -21,7 +21,7 @@ class Signup extends React.Component {
   render() {
     return(
       <div>
-        <h1>Signup Page</h1>
+        <h1>Signup Page and Login Page</h1>
         <Link to="/">Home</Link>
       </div>
     );
