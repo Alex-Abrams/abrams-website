@@ -7,6 +7,8 @@ import configureStore from './store/store';
 
 import App from './app';
 
+import { login, logout, signup } from './actions/session_actions';
+
 
 document.addEventListener('DOMContentLoaded', () => {
   const store = configureStore();
@@ -17,6 +19,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   window.store = store;
   window.getState = store.getState;
+  window.dispatch = store.dispatch;
+  window.login = login;
+  window.signup = signup;
+  window.logout = logout;
+
 
   root.render( <App store={store} /> );
 });
